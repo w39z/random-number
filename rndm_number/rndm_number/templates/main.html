@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,8 +6,9 @@
     <title>Random number</title>
 </head>
 <body>
-    <h3>Random number is:</h3>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+{% load static %}
+    <script src="{% static 'rndm_number\js\rnd_num.js' %}"></script>
 
     <script type="text/javascript"> $( function(){ $("#jqtest").html("JQuery installed successfully!"); } ); </script> <p id="jqtest"></p>
 

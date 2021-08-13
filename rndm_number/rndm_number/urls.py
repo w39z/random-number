@@ -27,5 +27,6 @@ urlpatterns = [
     path('login/', views.auth, name='login'),
     path('rnd/', MainView.as_view(), name='rnd'),
     path('logout/', views.logout_view, name='logout'),
+
 ]
 
