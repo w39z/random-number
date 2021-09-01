@@ -1,13 +1,8 @@
-new Vue({
-    el: '#rnd'
-    methods: {
-    randomNumber : function setInterval(function(){
-    console.log(Math.floor((Math.random()*100)+1));
-}, 500);
-        }
-    }
-)
+var id = window.setInterval(function(){randomNumber();},5000);
 
-//$setInterval(function(){
-//    console.log(Math.floor((Math.random()*100)+1));
-//}, 500);
+function randomNumber()
+{
+  var rand = Math.floor(Math.random()*101 | 0);
+  $('#holder').html(rand);
+}
+
